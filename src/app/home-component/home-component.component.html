@@ -1,14 +1,16 @@
-<h1>home-component works!</h1>
+<h1>Shoping-Card</h1>
 
-<input type="text" [(ngModel)]="StaticInput">
-<br><br>
-
-<input type="text" [(ngModel)]="DynamicInput">
-<h1>{{DynamicInput}}</h1>
-
-<br><hr><br>
-
-<input type="text" [(ngModel)] = "inputValue"> <br><br>
-
-<button type="submit" (click)="show()">Show</button>
-<h1>{{dynamicValue}}</h1>
+<div class="cart-container">
+    <div class="from-group">
+        <input type="number" class="quantity-input" [(ngModel)]="quantiity" min="0">
+    </div>
+    <div class="price-info">
+       <p> Price per item: <span class="price">
+            {{pricePerItem}}
+        </span>
+        </p>
+        <label>Total Price:</label>
+        <input type="text" class="totale-price-inpute" readonly
+         [(ngModel)]="totalePrice">
+    </div>
+</div>

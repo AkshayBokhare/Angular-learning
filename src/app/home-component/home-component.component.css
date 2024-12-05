@@ -1,0 +1,80 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Card Container Styling */
+.cart-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Form Group Styling */
+.from-group {
+    margin-bottom: 20px;
+}
+
+.quantity-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Price Info Section */
+.price-info {
+    text-align: left;
+}
+
+.price-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.price-info label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 16px;
+}
+
+.price {
+    font-weight: bold;
+    color: #ff5722;
+}
+
+.totale-price-inpute {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    outline: none;
+}
+
+/* Add some hover effects for interactivity */
+.quantity-input:focus,
+.totale-price-inpute:focus {
+    border-color: #ff5722;
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
+}
+
+/* Add spacing and alignment */
+.cart-container h1 {
+    text-align: center;
+    color: #ff5722;
+    margin-bottom: 20px;
+}

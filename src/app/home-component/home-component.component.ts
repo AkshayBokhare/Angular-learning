@@ -9,15 +9,11 @@ import { FormsModule } from '@angular/forms';
 })
 export class HomeComponentComponent {
 
-  StaticInput:string = "Satic two way binding";
-  DynamicInput: string = "";
-
-  inputValue: string = "";
-  dynamicValue:string ="";
+ quantiity:number =1;
+ pricePerItem:number=100;
 
 
-  show(){
-    this.dynamicValue = this.inputValue
-  }
-
+ get totalePrice():number{
+  return this.quantiity * this.pricePerItem;
+ }
 }
