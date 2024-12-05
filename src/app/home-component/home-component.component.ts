@@ -10,7 +10,16 @@ import { FormsModule } from '@angular/forms';
 })
 export class HomeComponentComponent {
 
-  display = true;
 
-  number =211;
+
+  age: number | undefined;
+  isEligible: string = '';
+
+  checkEligibility() {
+    if (this.age && this.age >= 18) {
+      this.isEligible = 'eligible';
+    } else {
+      this.isEligible = 'notEligible';
+    }
+  }
 }

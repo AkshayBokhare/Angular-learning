@@ -1,11 +1,9 @@
-<h1>Structural Directives (*ngIf)</h1>
+<h1>Structural Directives (*ngSwitch)</h1>
 
-<div *ngIf="display">
-    <h3> If display Variable is True then only this MSG Show  </h3>
+<label> Enter Your Age :</label>
+<input type="text" (input)="checkEligibility()" [(ngModel)]="age">
+
+<div [ngSwitch]="isEligible">
+    <p *ngSwitchCase="'eligible'">You are eligible to vote</p>
+    <p *ngSwitchDefault>You are NOT eligible to vote..!</p>
 </div>
-
-<h3 *ngIf="number > 0"> {{number}} is Greter than 0 </h3>
-<h3 *ngIf="number > 50"> {{number}} is Greter than 50 </h3>
-<h3 *ngIf="number < 20"> {{number}} is less than 20 </h3>
-<h3 *ngIf="number == 0"> {{number}} is equel to  0 </h3>
-
