@@ -11,4 +11,13 @@ export class HomeComponentComponent {
 
   StaticInput:string = "Satic two way binding";
   DynamicInput: string = "";
+
+  inputValue: string = "";
+  dynamicValue:string ="";
+
+
+  show(){
+    this.dynamicValue = this.inputValue
+  }
+
 }
