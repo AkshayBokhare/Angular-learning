@@ -1,16 +1,11 @@
-<h1>Shoping-Card</h1>
+<h1>Structural Directives (*ngIf)</h1>
 
-<div class="cart-container">
-    <div class="from-group">
-        <input type="number" class="quantity-input" [(ngModel)]="quantiity" min="0">
-    </div>
-    <div class="price-info">
-       <p> Price per item: <span class="price">
-            {{pricePerItem}}
-        </span>
-        </p>
-        <label>Total Price:</label>
-        <input type="text" class="totale-price-inpute" readonly
-         [(ngModel)]="totalePrice">
-    </div>
+<div *ngIf="display">
+    <h3> If display Variable is True then only this MSG Show  </h3>
 </div>
+
+<h3 *ngIf="number > 0"> {{number}} is Greter than 0 </h3>
+<h3 *ngIf="number > 50"> {{number}} is Greter than 50 </h3>
+<h3 *ngIf="number < 20"> {{number}} is less than 20 </h3>
+<h3 *ngIf="number == 0"> {{number}} is equel to  0 </h3>
+

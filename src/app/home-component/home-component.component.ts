@@ -1,19 +1,16 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-home-component',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './home-component.component.html',
   styleUrl: './home-component.component.css'
 })
 export class HomeComponentComponent {
 
- quantiity:number =1;
- pricePerItem:number=100;
+  display = true;
 
-
- get totalePrice():number{
-  return this.quantiity * this.pricePerItem;
- }
+  number =211;
 }
